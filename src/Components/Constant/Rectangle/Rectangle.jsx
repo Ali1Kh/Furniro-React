@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import "./Rectangle.css";
 
-import mainImg from '../Components/assets/images/img/Rectangle 1.png';
+import mainImg from "../../../assets/images/Rectangle 1.png";
 
-const Rectangle = () => {
+const Rectangle = ({ title }) => {
   return (
     <>
       <div className="mainScrin">
@@ -12,8 +12,8 @@ const Rectangle = () => {
             <div className="imge">
               <img src={mainImg} alt="Main" />
               <div className="adresIn">
-                <p className="mainP1">Shop</p>
-                <p className="scoundP1">Home &gt; Shop</p>
+                <p className="mainP1">{title}</p>
+                <p className="scoundP1">Home &gt; {title}</p>
               </div>
             </div>
           </div>

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* =======================================
   🛍️ Section 3 - Product List/Grid
 ======================================= */
@@ -61,6 +66,7 @@
   font-size: 20px;
   font-weight: bold;
   color: #000;
+
 }
 .boxin:hover {
   transform: translateY(-10px);

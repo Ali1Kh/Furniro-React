@@ -10,11 +10,11 @@ const SectionOne = () => {
     const imageNumber = (i % maxImageNumber) + 1;
     return {
       id: i + 1,
-      image: `../Components/assets/images/img/section3_.png_${imageNumber}.png`,
+      image: require(`../../../assets/images/section3_${(i % 8) + 1}.png`),
       fuct: "Respira",
       name: `Minimalist chair ${i + 1}`,
       price: `Rp ${500 + i * 10}.000`,
-      oldPrice: `Rp ${750 + i * 10}.000`
+      oldPrice: `Rp ${750 + i * 10}.000`,
     };
   });
 
@@ -66,7 +66,10 @@ const SectionOne = () => {
           </button>
         ))}
         {currentPage < totalPages && (
-          <button className="pageBtn next" onClick={() => setCurrentPage(currentPage + 1)}>
+          <button
+            className="pageBtn next"
+            onClick={() => setCurrentPage(currentPage + 1)}
+          >
             Next
           </button>
         )}
