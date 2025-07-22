@@ -29,7 +29,7 @@ function Header() {
               <Link to="/shop">Shop</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/">About</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
@@ -38,18 +38,18 @@ function Header() {
         </div>
 
         <div className="navBarIcons">
-          <a href="#">
+          <Link to="/compare">
             <i className="fa-solid fa-user"></i>
-          </a>
-          <a href="#">
+          </Link>
+          <Link>
             <i className="fa-solid fa-magnifying-glass"></i>
-          </a>
-          <a href="#">
+          </Link>
+          <Link>
             <i className="fa-solid fa-heart"></i>
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="/checkout">
             <i className="fa-solid fa-cart-plus"></i>
-          </a>
+          </Link>
         </div>
       </div>
 

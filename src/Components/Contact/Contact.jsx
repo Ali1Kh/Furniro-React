@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../Constant/Header/Header";
 
-export default function Home() {
+export default function Contact() {
   return (
     <div>
       <Header />
-      Home
+      Contact
     </div>
   );
 }

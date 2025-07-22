@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../Constant/Header/Header";
 
-export default function Home() {
+export default function Compare() {
   return (
     <div>
       <Header />
-      Home
+      Compare
     </div>
   );
 }
