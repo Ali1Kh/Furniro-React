@@ -54,13 +54,14 @@ function Header() {
       </div>
 
       <div className={`sidebar ${isSidebarOpen ? "show" : ""}`}>
-        <a href="#" onClick={toggleSidebar}>
+        <Link href="#" onClick={toggleSidebar}>
           ✖
-        </a>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/shop">Shop</Link>
+        <Link >About</Link>
+        <Link to="/contact">Contact</Link>
+
       </div>
     </>
   );

@@ -2,7 +2,8 @@
 
 
 
-function SectionTwo() {
+
+function SectionTwo(props) {
 return (
     <div className='section-two'>
     <p>Section Two</p>
@@ -11,4 +12,9 @@ return (
 }
 
 
+
+
 export default SectionTwo;
+
+
+
