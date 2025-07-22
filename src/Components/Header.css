@@ -1,0 +1,109 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navBar img {
+    display: inline;
+}
+
+.navBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    
+}
+
+.navBarLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.navBarLinks a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.navBarIcons {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    right: 30px;
+}
+
+.text p {
+    font-weight: bold;
+    font-size: 22px;
+    color: #b88e2f;
+    position: relative;
+    left: 30px;
+}
+
+/* Sidebar for mobile */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #8d8d8d;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidebar.show {
+    width: 200px;
+}
+
+
+.sidebar a {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    padding: 15px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  
+    .text {
+    position: relative;
+    left: -10px;
+    }
+
+    .navBarLinks {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navBarIcons {
+        display: none;
+    }
+
+
+}

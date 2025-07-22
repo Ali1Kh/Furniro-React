@@ -1,0 +1,76 @@
+/* ===== Filter Bar Section ===== */
+.barSection1 {
+  width: 100%;
+  background-color: #f9f1e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.inBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.in1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.productCount {
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+.layout-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.layout-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.layout-icons img:hover {
+  transform: scale(1.1);
+}
+
+.inBarRight {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.showProducts,
+.short {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.dropdown {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}

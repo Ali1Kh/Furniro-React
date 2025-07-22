@@ -1,0 +1,19 @@
+.imge {
+  position: relative; 
+  width: 100%;
+  height: auto;
+}
+
+.imge img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adresIn {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
