@@ -48,7 +48,7 @@
   margin-top: 30px;
 }
 @media (max-width: 767px) {
-    .bigP {
+  .bigP {
     font-size: 15px;
   }
   .smalP {
@@ -57,5 +57,21 @@
   .buttonBuy button {
     width: 100%;
     height: 50px !important;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
