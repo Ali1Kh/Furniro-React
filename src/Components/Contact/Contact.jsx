@@ -2,10 +2,12 @@ import React from "react";
 import Header from "../Constant/Navbar/Navbar";
 import "./contact.css";
 import Quality from "../Constant/Quality/Quality";
+import Banner from "../Constant/Banner/Banner";
 export default function Contact() {
   return (
     <div>
       <Header />
+      <Banner title={"Contact"} />
       {/* <!-- Contact Section --> */}
       <section className="contact">
         <div className="section-header">
