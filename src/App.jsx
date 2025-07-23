@@ -6,6 +6,7 @@ import Checkout from "./Components/Checkout/Checkout";
 import Contact from "./Components/Contact/Contact";
 import Product from "./Components/Product/Product";
 import Compare from "./Components/Compare/Compare";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/compare" element={<Compare />} />
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

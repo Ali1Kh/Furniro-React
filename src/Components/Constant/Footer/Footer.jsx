@@ -11,16 +11,16 @@ function Footer() {
         </div>
         <div class="footer-links">
           <h4>Links</h4>
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/shop">Shop</Link>
           <Link to="">About</Link>
-          <Link to="/Contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         <div class="footer-links">
           <h4>Help</h4>
-          <Link href="#">Payment Options</Link>
-          <Link href="#">Returns</Link>
-          <Link href="#">Privacy Policies</Link>
+          <Link>Payment Options</Link>
+          <Link>Returns</Link>
+          <Link>Privacy Policies</Link>
         </div>
         <div class="newsletter">
           <h4>Newsletter</h4>
