@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import "..//Home.css"; 
 
-import img1 from "./slaider1.png";
-import img2 from "./slaider2.png";
-import img3 from "./slaider3.png";
-import img4 from "./slaider4.png";
+import img1 from "../../../assets/images/Ads/slaider1.png";
+import img2 from "../../../assets/images/Ads/slaider2.png";
+import img3 from "../../../assets/images/Ads/slaider3.png";
+import img4 from "../../../assets/images/Ads/slaider4.png";
 
 const Ads = () => {
   const sliderRef = useRef();
