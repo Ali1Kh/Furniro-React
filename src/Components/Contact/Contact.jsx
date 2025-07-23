@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Constant/Navbar/Navbar";
 import "./contact.css";
+import Quality from "../Constant/Quality/Quality";
 export default function Contact() {
   return (
     <div>
@@ -71,6 +72,7 @@ export default function Contact() {
           </form>
         </div>
       </section>
+      <Quality />
     </div>
   );
 }
