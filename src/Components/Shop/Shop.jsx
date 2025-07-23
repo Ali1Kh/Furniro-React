@@ -4,6 +4,8 @@ import Banner from "../Constant/Banner/Banner";
 import FilterBar from "./FilterBar/FilterBar";
 import SectionOne from "./SectionOne/SectionOne";
 import Footer from "../Constant/Footer/Footer";
+import SectionTwo from "./SectionTwo/SectionTwo";
+
 
 export default function Shop() {
   return (
@@ -12,6 +14,7 @@ export default function Shop() {
       <Banner title={"Shop"} />
       <FilterBar />
       <SectionOne />
+      <SectionTwo />
       <Footer />
     </div>
   );

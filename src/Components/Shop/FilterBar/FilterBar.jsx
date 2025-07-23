@@ -3,7 +3,7 @@ import "./FilterBar.css";
 
 import filterIcon from "../../../assets/icons/filtering.png";
 import listIcon from "../../../assets/icons/Vector (1) copy.png";
-import gridIcon from "../../../assets/icons/Vector (1).png";
+import gridIcon from "../../../assets/icons/Vector.png";
 
 const FilterBar = () => {
   return (
