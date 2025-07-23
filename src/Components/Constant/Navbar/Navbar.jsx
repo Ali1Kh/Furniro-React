@@ -47,7 +47,7 @@ function Navbar() {
           <Link>
             <i className="fa-solid fa-heart"></i>
           </Link>
-          <Link href="/checkout">
+          <Link to="/checkout">
             <i className="fa-solid fa-cart-plus"></i>
           </Link>
         </div>
@@ -59,9 +59,8 @@ function Navbar() {
         </Link>
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
-        <Link >About</Link>
+        <Link>About</Link>
         <Link to="/contact">Contact</Link>
-
       </div>
     </>
   );
