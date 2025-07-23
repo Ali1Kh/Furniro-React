@@ -3,7 +3,7 @@ import "./Hero.css";
 export default function Hero() {
   return <div>
     {/* <!-- Section 1 --> */}
-    <div classNameName="section1">
+    <div className="section1">
       <div className="backgroundFull">
         <div className="box">
           <div className="inbox">
