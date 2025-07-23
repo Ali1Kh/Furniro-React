@@ -4,6 +4,7 @@ import "./Product.css";
 import "../Shop/SectionOne/SectionOne.css";
 import { Link } from "react-router-dom";
 import { ProductItem } from "../Shop/SectionOne/SectionOne";
+import Footer from "../Constant/Footer/Footer";
 
 export default function Product() {
   let relatedProducts = [
@@ -228,6 +229,7 @@ export default function Product() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
