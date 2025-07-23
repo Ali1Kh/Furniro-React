@@ -3,6 +3,7 @@ import Header from "../Constant/Navbar/Navbar";
 import "./contact.css";
 import Quality from "../Constant/Quality/Quality";
 import Banner from "../Constant/Banner/Banner";
+import Footer from "../Constant/Footer/Footer";
 export default function Contact() {
   return (
     <div>
@@ -75,6 +76,7 @@ export default function Contact() {
         </div>
       </section>
       <Quality />
+      <Footer />
     </div>
   );
 }

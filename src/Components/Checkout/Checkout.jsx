@@ -3,6 +3,7 @@ import "./checkout.css";
 import Navbar from "../Constant/Navbar/Navbar";
 import Banner from "../Constant/Banner/Banner";
 import Quality from "../Constant/Quality/Quality";
+import Footer from "../Constant/Footer/Footer";
 
 function CheckoutForm() {
   return (
@@ -107,6 +108,7 @@ export default function CheckoutPage() {
         <OrderSummary />
       </section>
       <Quality />
+      <Footer />
     </>
   );
 }
