@@ -19,8 +19,6 @@
 }
 
 
-
-
 .in1 {
   display: flex;
   align-items: center;
@@ -77,3 +75,69 @@
   color: #333;
   cursor: pointer;
 }
+
+
+
+
+
+/* =======================================
+  📱 Media Queries
+======================================= */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navBarLinks { display: none; }
+  .menu-icon { display: block; }
+  .navBarIcons { display: none; }
+
+ 
+  /* Section 1 */
+  /* .barSection1 { display: none !important; } */
+  .mainP1 { font-size: 20px !important; }
+  .scoundP1 { font-size: 10px !important; }
+
+  /* Section 3 */
+  .section3 h2 { font-size: 25px !important; }
+
+
+  
+
+   .barSection1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .inBarLeft,
+  .inBarRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .in1 {
+    display: none;
+   
+  }
+
+
+  .short {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .filter,
+  label {
+    font-size: 14px;
+  }
+
+  .dropdown {
+    padding: 5px;
+    font-size: 14px;
+    width: 80%;
+  }
+
+}
+

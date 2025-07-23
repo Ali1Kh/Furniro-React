@@ -23,7 +23,7 @@ const FilterBar = () => {
       <div className="inBarRight">
         <div className="in1">
           <p className="filter">Showing</p>
-          <span className="productCount">12</span>
+          <span className="productCount">16</span>
           <p>products</p>
         </div>
 
