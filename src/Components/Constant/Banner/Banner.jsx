@@ -1,9 +1,9 @@
 import React from "react";
-import "./Rectangle.css";
+import "./Banner.css";
 
 import mainImg from "../../../assets/images/Rectangle 1.png";
 
-const Rectangle = ({ title }) => {
+const Banner = ({ title }) => {
   return (
     <>
       <div className="mainScrin">
@@ -12,8 +12,8 @@ const Rectangle = ({ title }) => {
             <div className="imge">
               <img src={mainImg} alt="Main" />
               <div className="adresIn">
-                <p className="mainP1">{title}</p>
-                <p className="scoundP1">Home &gt; {title}</p>
+                <h1 className="mainP1">{title}</h1>
+                <h2 className="scoundP1">Home &gt; {title}</h2>
               </div>
             </div>
           </div>
@@ -23,4 +23,4 @@ const Rectangle = ({ title }) => {
   );
 };
 
-export default Rectangle;
+export default Banner;
