@@ -1,19 +1,18 @@
 #quality {
   background-color: rgba(250, 243, 234, 1);
   width: 100%;
-  padding: 40px 0px;
+  padding: 40px 25px;
 }
 
 .qualityContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .quality-box {
   display: flex;
   gap: 1.5rem;
-  width: 25%;
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
@@ -22,17 +21,31 @@
 }
 
 .quality-box img {
-  width: 65px;
+  width: 55px;
 }
 
 .quality-box h2 {
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
 .quality-box p {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
+}
+
+@media (max-width: 1300px) {
+  .quality-box img {
+    width: 45px;
+  }
+
+  .quality-box h2 {
+    font-size: 20px;
+  }
+
+  .quality-box p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 790px) {
