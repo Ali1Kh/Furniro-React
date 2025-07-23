@@ -170,3 +170,36 @@
 
 
 }
+
+
+/*
+dot slaider
+*/
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+    margin-top: 30px;
+
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff0cc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+border: 2px solid #999;
+
+}
+
+.dot.active {
+  background-color: #b88e2f;
+}
+
+
+/*
+---------------end dot slaider----------------
+*/

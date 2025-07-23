@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "..//Home.css"; 
+import "../Home.css";
 
 import img1 from "../../../assets/images/Ads/slaider1.png";
 import img2 from "../../../assets/images/Ads/slaider2.png";
@@ -10,22 +10,29 @@ const Ads = () => {
   const sliderRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [img1, img2, img3, img4,img1, img2, img3, img4];
-const moveSlide = (direction) => {
-  const slider = sliderRef.current;
-  const slideWidth = slider.querySelector("img").clientWidth ; 
-  const maxIndex = images.length - 1;
+  const images = [img1, img2, img3, img4, img1, img2, img3, img4];
 
-  let newIndex = currentIndex + direction;
-  
-  if (newIndex < 0) newIndex = 0;
-  if (newIndex > maxIndex) newIndex = -maxIndex;
+  const moveSlide = (direction) => {
+    const slider = sliderRef.current;
+    const slideWidth = slider.querySelector("img").clientWidth;
+    const maxIndex = images.length - 1;
 
-  setCurrentIndex(newIndex);
-  slider.style.transform = `translateX(-${newIndex * slideWidth}px)`;
+    let newIndex = currentIndex + direction;
 
-  
-};
+    if (newIndex < 0) newIndex = 0;
+    if (newIndex > maxIndex) newIndex = maxIndex;
+
+    setCurrentIndex(newIndex);
+    slider.style.transform = `translateX(-${newIndex * slideWidth}px)`;
+  };
+
+  const moveToSlide = (index) => {
+    const slider = sliderRef.current;
+    const slideWidth = slider.querySelector("img").clientWidth;
+
+    setCurrentIndex(index);
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
+  };
 
   return (
     <div className="Section4">
@@ -47,7 +54,7 @@ const moveSlide = (direction) => {
             <div className="slider-container">
               <div className="slider-track" ref={sliderRef}>
                 {images.map((img, index) => (
-                  <img src={img} />
+                  <img src={img} key={index} />
                 ))}
               </div>
               <button className="arrow left" onClick={() => moveSlide(-1)}>
@@ -56,6 +63,16 @@ const moveSlide = (direction) => {
               <button className="arrow right" onClick={() => moveSlide(1)}>
                 &#10095;
               </button>
+
+              <div className="dots">
+                {images.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`dot ${index === currentIndex ? "active" : ""}`}
+                    onClick={() => moveToSlide(index)}
+                  ></span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
