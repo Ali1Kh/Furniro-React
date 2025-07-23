@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SectionOne.css";
+import { Link } from "react-router-dom";
 
 const SectionOne = () => {
   const totalProducts = 44;
@@ -35,23 +36,7 @@ const SectionOne = () => {
 
       <div className="boxContainer grid-view">
         {currentProducts.map((product) => (
-          <div key={product.id} className="boxin">
-            <img src={product.image} alt={product.name} />
-            <p className="fuct">{product.fuct}</p>
-            <p className="productName">{product.name}</p>
-            <p className="price">
-              {product.price}
-              <del style={{ color: "#a7a7a7", paddingLeft: "10px" }}>
-                {product.oldPrice}
-              </del>
-            </p>
-            <button className="addCartBtn">Add to Cart</button>
-            <div className="linksUnderBtn">
-              <a href="#">Details</a>
-              <a href="#">Share</a>
-              <a href="#">Wishlist</a>
-            </div>
-          </div>
+          <ProductItem product={product} />
         ))}
       </div>
 
@@ -75,6 +60,30 @@ const SectionOne = () => {
         )}
       </div>
     </div>
+  );
+};
+
+export const ProductItem = ({ product }) => {
+  return (
+    <>
+      <div key={product.id} className="boxin">
+        <img src={product.image} alt={product.name} />
+        <p className="fuct">{product.fuct}</p>
+        <p className="productName">{product.name}</p>
+        <p className="price">
+          {product.price}
+          <del style={{ color: "#a7a7a7", paddingLeft: "10px" }}>
+            {product.oldPrice}
+          </del>
+        </p>
+        <button className="addCartBtn">Add to Cart</button>
+        <div className="linksUnderBtn">
+          <Link to={`/product`}>Details</Link>
+          <a href="#">Share</a>
+          <a href="#">Wishlist</a>
+        </div>
+      </div>
+    </>
   );
 };
 
