@@ -6,6 +6,8 @@ import "./Compare.css";
 import backgroundImage from "../../assets/images/background 1.png";
 import asgaardSofa from "../../assets/images/product/Asgaard sofa 3.png";
 import cloudSofa from "../../assets/images/product/Cloud sofa three seater + ottoman_1 1.png";
+import Banner from "../Constant/Banner/Banner";
+import Quality from "../Constant/Quality/Quality";
 
 export default function Compare() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,29 +17,20 @@ export default function Compare() {
   };
 
   const addProduct = () => {
-    alert('Add product functionality coming soon!');
+    alert("Add product functionality coming soon!");
   };
 
   return (
     <div className="compare-page">
       <Header />
-      
-      {/* Comparison Header */}
-      <div className="comparison-header">
-        <img src={backgroundImage} alt="Background" />
-        <div className="header-content">
-          <h1>Compare Products</h1>
-          <div className="breadcrumb">
-            <Link to="/">Home</Link> / <span>Compare</span>
-          </div>
-        </div>
-      </div>
-
+      s <Banner title={"Product Comparison"} />
       {/* Comparison Container */}
       <div className="comparison-container">
         <div className="left-section">
           <h2>Choose Products</h2>
-          <Link to="/shop" className="view-more-link">View More Products</Link>
+          <Link to="/shop" className="view-more-link">
+            View More Products
+          </Link>
         </div>
 
         <div className="products-section">
@@ -72,7 +65,6 @@ export default function Compare() {
           </button>
         </div>
       </div>
-
       {/* Comparison Table */}
       <div className="comparison-table-container">
         <table className="comparison-table">
@@ -80,7 +72,11 @@ export default function Compare() {
             <tr>
               <th>Features</th>
               <th>
-                <img src={asgaardSofa} alt="Asgaard sofa" className="product-img" />
+                <img
+                  src={asgaardSofa}
+                  alt="Asgaard sofa"
+                  className="product-img"
+                />
                 <h3>Asgaard sofa</h3>
                 <div className="price">$250</div>
                 <div className="rating">
@@ -166,37 +162,12 @@ export default function Compare() {
           </tbody>
         </table>
       </div>
-
       {/* Action Buttons */}
       <div className="action-buttons">
         <button className="add-to-cart-btn">Add to Cart - Asgaard sofa</button>
         <button className="add-to-cart-btn">Add to Cart - Cloud sofa</button>
       </div>
-
-      {/* Features Section */}
-      <div className="features-section">
-        <div className="feature">
-          <i>🚚</i>
-          <h4>Free Shipping</h4>
-          <p>Free shipping on all orders over $100</p>
-        </div>
-        <div className="feature">
-          <i>🔄</i>
-          <h4>Easy Returns</h4>
-          <p>30-day return policy for all products</p>
-        </div>
-        <div className="feature">
-          <i>🛡️</i>
-          <h4>Secure Payment</h4>
-          <p>100% secure payment processing</p>
-        </div>
-        <div className="feature">
-          <i>💬</i>
-          <h4>24/7 Support</h4>
-          <p>Round-the-clock customer support</p>
-        </div>
-      </div>
-
+      <Quality />
       <Footer />
     </div>
   );
