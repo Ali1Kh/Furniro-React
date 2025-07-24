@@ -1,0 +1,43 @@
+#Browse {
+  padding: 50px;
+  width: 100%;
+}
+
+.browseTitle {
+  text-align: center;
+}
+
+.browseTitle h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.browseTitle p {
+  padding: 15px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.img {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 10px;
+}
