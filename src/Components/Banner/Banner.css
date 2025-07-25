@@ -26,3 +26,16 @@
 .mainP1 {
   margin-bottom: 12px;
 }
+
+@media (max-width: 768px) {
+  .imge {
+    position: relative;
+    width: 100%;
+    height: 150px;
+  }
+  .imge .bannerImage {
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
+}
