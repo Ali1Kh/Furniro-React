@@ -9,7 +9,7 @@ import Gallery from "./Gallery/Gallery";
 import Footer from "../../Components/Footer/Footer";
 export default function Home() {
   return (
-    <dir>
+    <div>
       <Header />
       <Hero />
       <Browse />
@@ -17,6 +17,6 @@ export default function Home() {
       <Ads />
       <Gallery />
       <Footer />
-    </dir>
+    </div>
   );
 }
