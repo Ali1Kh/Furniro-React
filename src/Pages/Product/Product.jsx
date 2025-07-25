@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../Components/Navbar/Navbar";
 import "./Product.css";
 import "../Shop/SectionOne/SectionOne.css";
@@ -41,6 +41,19 @@ export default function Product() {
       oldPrice: `Rp 750000.000`,
     },
   ];
+
+  let [headImage, setHeadImage] = useState(
+    require("../../assets/images/product/Asgaard sofa 3.png")
+  );
+
+  let productImages = [
+    require(`../../assets/images/product/1.png`),
+    require(`../../assets/images/product/2.png`),
+    require(`../../assets/images/product/3.png`),
+    require(`../../assets/images/product/4.png`),
+  ];
+
+  let [quantity, setQuantity] = useState(1);
   return (
     <div>
       <Header />
@@ -61,36 +74,14 @@ export default function Product() {
           <div class="productInfo">
             <div class="imagesContainer">
               <div class="sideImages">
-                <div class="sideImageItem">
-                  <img
-                    src={require("../../assets/images/product/1.png")}
-                    alt=""
-                  />
-                </div>
-                <div class="sideImageItem">
-                  <img
-                    src={require("../../assets/images/product/2.png")}
-                    alt=""
-                  />
-                </div>
-                <div class="sideImageItem">
-                  <img
-                    src={require("../../assets/images/product/3.png")}
-                    alt=""
-                  />
-                </div>
-                <div class="sideImageItem">
-                  <img
-                    src={require("../../assets/images/product/4.png")}
-                    alt=""
-                  />
-                </div>
+                {productImages.map((item) => (
+                  <div onClick={() => setHeadImage(item)} class="sideImageItem">
+                    <img src={item} alt="" />
+                  </div>
+                ))}
               </div>
               <div class="headImage">
-                <img
-                  src={require("../../assets/images/product/Asgaard sofa 3.png")}
-                  alt=""
-                />
+                <img src={headImage} alt="" />
               </div>
             </div>
             <div class="content">
@@ -125,11 +116,15 @@ export default function Product() {
               </div>
               <div class="productActionBtns">
                 <div class="quantityBtn">
-                  <button>
+                  <button
+                    onClick={() =>
+                      setQuantity(quantity - 1 < 1 ? 1 : quantity - 1)
+                    }
+                  >
                     <i class="fa-solid fa-minus"></i>
                   </button>
-                  <span>1</span>
-                  <button>
+                  <span>{quantity}</span>
+                  <button onClick={() => setQuantity(quantity + 1)}>
                     <i class="fa-solid fa-plus"></i>
                   </button>
                 </div>

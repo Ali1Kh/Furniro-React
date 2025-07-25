@@ -64,7 +64,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
+
 .productInfo .imagesContainer .headImage img {
   width: 100%;
 }
