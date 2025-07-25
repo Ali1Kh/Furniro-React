@@ -1,10 +1,10 @@
 .imge {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: auto;
 }
 
-.imge img {
+.imge .bannerImage {
   width: 100%;
   height: auto;
   display: block;
@@ -12,8 +12,17 @@
 
 .adresIn {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.logoBanner {
+  margin-bottom: 12px;
+  width: 75px;
+}
+
+.mainP1 {
+  margin-bottom: 12px;
 }
