@@ -30,7 +30,7 @@ const Ads = () => {
   // dots
   const moveToSlide = (index) => {
     const slider = sliderRef.current;
-    const slideWidth = slider.querySelector("img").clientWidth;
+    const slideWidth = slider.querySelector("img").clientWidth+20;
     setCurrentIndex(index);
     slider.style.transform = `translateX(-${index * slideWidth}px)`;
     
