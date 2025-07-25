@@ -12,6 +12,7 @@ const Ads = () => {
 
   const images = [img1, img2, img3, img4, img1, img2, img3, img4];
 
+
   const moveSlide = (direction) => {
     const slider = sliderRef.current;
     const slideWidth = slider.querySelector("img").clientWidth;
@@ -20,16 +21,16 @@ const Ads = () => {
     let newIndex = currentIndex + direction;
 
     if (newIndex < 0) newIndex = 0;
-    if (newIndex > maxIndex) newIndex = maxIndex;
+    if (newIndex > maxIndex) newIndex = -maxIndex;
 
     setCurrentIndex(newIndex);
-    slider.style.transform = `translateX(-${newIndex * slideWidth}px)`;
+    slider.style.transform = `translateX(-${newIndex * slideWidth}px)`;    
   };
-
+  
+  // dots
   const moveToSlide = (index) => {
     const slider = sliderRef.current;
     const slideWidth = slider.querySelector("img").clientWidth;
-
     setCurrentIndex(index);
     slider.style.transform = `translateX(-${index * slideWidth}px)`;
   };

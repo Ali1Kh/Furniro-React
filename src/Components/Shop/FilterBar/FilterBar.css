@@ -1,4 +1,4 @@
-/* ===== Filter Bar Section ===== */
+/* ----------------------- Filter Bar Section ---------------------------- */
 .barSection1 {
   width: 100%;
   background-color: #f9f1e7;
@@ -80,9 +80,7 @@
 
 
 
-/* =======================================
-  📱 Media Queries
-======================================= */
+/* --------------------- Media Queries ------------------------*/
 @media (max-width: 768px) {
   /* Navbar */
   .navBarLinks { display: none; }
