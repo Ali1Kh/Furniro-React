@@ -41,3 +41,9 @@
   text-align: center;
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .img {
+    gap: 2rem;
+  }
+}
