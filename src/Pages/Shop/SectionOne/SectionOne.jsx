@@ -79,8 +79,8 @@ export const ProductItem = ({ product }) => {
         <button className="addCartBtn">Add to Cart</button>
         <div className="linksUnderBtn">
           <Link to={`/product`}>Details</Link>
-          <a href="#">Share</a>
-          <a href="#">Wishlist</a>
+          <Link href="#">Share</Link>
+          <Link href="#">Wishlist</Link>
         </div>
       </div>
     </>
