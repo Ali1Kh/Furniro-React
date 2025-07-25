@@ -1,9 +1,9 @@
 import React from "react";
 import "./checkout.css";
-import Navbar from "../Constant/Navbar/Navbar";
-import Banner from "../Constant/Banner/Banner";
-import Quality from "../Constant/Quality/Quality";
-import Footer from "../Constant/Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar";
+import Banner from "../../Components/Banner/Banner";
+import Quality from "../../Components/Quality/Quality";
+import Footer from "../../Components/Footer/Footer";
 
 function CheckoutForm() {
   return (

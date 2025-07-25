@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "../Constant/Navbar/Navbar";
-import Footer from "../Constant/Footer/Footer";
+import Header from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 import "./Compare.css";
 import backgroundImage from "../../assets/images/background 1.png";
 import asgaardSofa from "../../assets/images/product/Asgaard sofa 3.png";
 import cloudSofa from "../../assets/images/product/Cloud sofa three seater + ottoman_1 1.png";
-import Banner from "../Constant/Banner/Banner";
-import Quality from "../Constant/Quality/Quality";
+import Banner from "../../Components/Banner/Banner";
+import Quality from "../../Components/Quality/Quality";
 
 export default function Compare() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

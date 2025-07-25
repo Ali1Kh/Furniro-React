@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Shop from "./Components/Shop/Shop";
-import Home from "./Components/Home/Home";
-import Checkout from "./Components/Checkout/Checkout";
-import Contact from "./Components/Contact/Contact";
-import Product from "./Components/Product/Product";
-import Compare from "./Components/Compare/Compare";
-import NotFound from "./Components/NotFound/NotFound";
+import Shop from "./Pages/Shop/Shop";
+import Home from "./Pages/Home/Home";
+import Checkout from "./Pages/Checkout/Checkout";
+import Contact from "./Pages/Contact/Contact";
+import Product from "./Pages/Product/Product";
+import Compare from "./Pages/Compare/Compare";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (

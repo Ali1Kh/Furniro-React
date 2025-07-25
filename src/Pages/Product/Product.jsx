@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../Constant/Navbar/Navbar";
+import Header from "../../Components/Navbar/Navbar";
 import "./Product.css";
 import "../Shop/SectionOne/SectionOne.css";
 import { Link } from "react-router-dom";
 import { ProductItem } from "../Shop/SectionOne/SectionOne";
-import Footer from "../Constant/Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Product() {
   let relatedProducts = [

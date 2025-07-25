@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../Constant/Navbar/Navbar";
+import Header from "../../Components/Navbar/Navbar";
 import "./contact.css";
-import Quality from "../Constant/Quality/Quality";
-import Banner from "../Constant/Banner/Banner";
-import Footer from "../Constant/Footer/Footer";
+import Quality from "../../Components/Quality/Quality";
+import Banner from "../../Components/Banner/Banner";
+import Footer from "../../Components/Footer/Footer";
 export default function Contact() {
   return (
     <div>
@@ -21,35 +21,43 @@ export default function Contact() {
         </div>
         <div className="contact-container">
           {/* <!-- Contact Info --> */}
-               <div class="contact-info">
-        <div class="info-block">
-          <div class="icon">
-            <i class="fa-solid fa-location-dot"></i>
+          <div class="contact-info">
+            <div class="info-block">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>236 5th SE Avenue, New York NY10000, United States</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <span class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <div>
+                <h4>Phone</h4>
+                <p>
+                  Mobile: +(84) 546-6789
+                  <br />
+                  Hotline: +(84) 456-6789
+                </p>
+              </div>
+            </div>
+            <div class="info-block">
+              <span class="icon">
+                <i class="fa-solid fa-clock"></i>
+              </span>
+              <div>
+                <h4>Working Time</h4>
+                <p>
+                  Monday–Friday: 9:00 – 22:00
+                  <br />
+                  Saturday–Sunday: 9:00 – 21:00
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4>Address</h4>
-            <p>236 5th SE Avenue, New York NY10000, United States</p>
-          </div>
-        </div>
-        <div class="info-block">
-          <span class="icon">
-            <i class="fa-solid fa-phone"></i>
-          </span>
-          <div>
-            <h4>Phone</h4>
-            <p>Mobile: +(84) 546-6789<br />Hotline: +(84) 456-6789</p>
-          </div>
-        </div>
-        <div class="info-block">
-          <span class="icon">
-            <i class="fa-solid fa-clock"></i>
-          </span>
-          <div>
-            <h4>Working Time</h4>
-            <p>Monday–Friday: 9:00 – 22:00<br />Saturday–Sunday: 9:00 – 21:00</p>
-          </div>
-        </div>
-      </div>
           {/* <!-- Contact Form --> */}
           <form className="contact-form">
             <label for="name">Your name</label>

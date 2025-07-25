@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
 
-import mainImg from "../../../assets/images/Rectangle 1.png";
+import mainImg from "../../assets/images/Rectangle 1.png";
 
 const Banner = ({ title }) => {
   return (

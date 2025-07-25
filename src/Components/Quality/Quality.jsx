@@ -7,7 +7,7 @@ export default function Quality() {
       <div className="qualityContainer">
         <div className="quality-box">
           <img
-            src={require("../../../assets/icons/Group copy.png")}
+            src={require("../../assets/icons/Group copy.png")}
             alt="Trophy"
           />
           <div>
@@ -17,7 +17,7 @@ export default function Quality() {
         </div>
         <div className="quality-box">
           <img
-            src={require("../../../assets/icons/Group (2).png")}
+            src={require("../../assets/icons/Group (2).png")}
             alt="Warranty"
           />
           <div>
@@ -27,7 +27,7 @@ export default function Quality() {
         </div>
         <div className="quality-box">
           <img
-            src={require("../../../assets/icons/Vector (2).png")}
+            src={require("../../assets/icons/Vector (2).png")}
             alt="Shipping"
           />
           <div>
@@ -37,7 +37,7 @@ export default function Quality() {
         </div>
         <div className="quality-box">
           <img
-            src={require("../../../assets/icons/customer-support.png")}
+            src={require("../../assets/icons/customer-support.png")}
             alt="Support"
           />
           <div>
